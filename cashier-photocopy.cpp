@@ -5,14 +5,14 @@ using namespace std;
 
 main(){
 	string nm;
-	int hrg=225;
+	int hrg=225; //cost per sheet
 	int lbr;
 	float ptg, by;
-	cout<<"     ***Aplikasi Ongkos Fotocopy***     \n\n\n"<< endl;
+	cout<<"     ***Photocopy Cost App***     \n\n\n"<< endl;
 	cout<< "INPUT DATA"<<endl;
-	cout<< "Nama Konsumen : ";
+	cout<< "Consument Name : ";
 	getline(cin,nm);
-	cout << "Banyaknya Lembar : ";
+	cout << "Many of Sheet : ";
 	cin >> lbr;
 	by=lbr*hrg;
 	if(lbr<100){
@@ -24,13 +24,13 @@ main(){
 	else {
 		ptg=(20*by)/100;
 	}
-	cout << "\n\nHASIL PERHITUNGAN" << endl;
-	cout << "Nama Konsumen : "<< nm << endl;
-	cout << "Banyaknya Lembar : "<< lbr << endl;
-	cout << "Biaya Fotocopy : Rp."<< by << endl;
-	cout << "Potongan : Rp."<< ptg << endl;
+	cout << "\n\nTHE CALCULATION RESULT" << endl;
+	cout << "Consument Name : "<< nm << endl;
+	cout << "Many of Sheet : "<< lbr << endl;
+	cout << "Photocopy Cost : Rp."<< by << endl;
+	cout << "Discount  : Rp."<< ptg << endl;
 	cout << "============================"<< endl;
-	cout << "Total Pembayaran : Rp."<< by-ptg << endl;
+	cout << "Total : Rp."<< by-ptg << endl;
 	getch();
 }
  
