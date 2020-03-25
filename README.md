@@ -1,2 +1,2 @@
 # -cashier-photocopy
-simple cashier program, you can edit the source code all you want.
+simple cashier program, you can edit the source code all you want. Buil in c++ and python.
